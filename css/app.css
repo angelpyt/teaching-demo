@@ -1,9 +1,10 @@
 body {
     font-family: Roboto, Noto, sans-serif;
+    background-color: #FFF8E1;
 }
 
 .background {
-    background-color: lightgray;
+    background-color: #FFF8E1;
 }
 
 order-form {
