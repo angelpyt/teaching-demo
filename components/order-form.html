@@ -2,8 +2,7 @@
 <!-- import the iron-input custom element -->
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
-
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <dom-module id="order-form">
 
@@ -11,38 +10,23 @@
         <!-- Scoped css style for this element -->
         <style>
             paper-card {
-                width: 80%;
+                width: 60%;
+                --paper-card-header-color: white;
             }
         </style>
-        <paper-card heading="Menu" image="{{image}}.jpg">
-            <div class="card-content">
-                <paper-dropdown-menu label="Food on our menu">
-                    <paper-menu class="dropdown-content">
-                        <paper-item>Hamburger</paper-item>
-                        <paper-item>Pizza</paper-item>
-                        <paper-item>Spaghetti</paper-item>
-                        <paper-item>Salad</paper-item>
-                    </paper-menu>
-                </paper-dropdown-menu>
-            </div>
-            <div class="card-actions">
 
-            </div>
-        </paper-card>
+        <!-- local DOM goes here -->
     </template>
 
     <script>
         Polymer({
             is: "order-form",
             properties: {
-                image: {
-                    type: String,
-                    value: 'pizza'
-                }
+                // declare properties here
             }
         });
 
-        $('paper-dropdown-menu').attr('selectedItem')
+
     </script>
 
 </dom-module>

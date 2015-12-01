@@ -38,36 +38,22 @@
     <link rel="stylesheet" href="css/app.css">
 
 </head>
-<body class="fullbleed vertical layout">
-<paper-drawer-panel class="flex">
-    <!-- drawer -->
-    <paper-header-panel drawer class="layout vertical">
-        <div>
-            <h4 class="title">Dawg Coffee</h4>
-            <paper-listbox id="drawer-list">
-                <paper-item>
-                    <text>Order</text>
-                </paper-item>
-                <paper-item>
-                    <text><a href="about.html">About</a></text>
-                </paper-item>
-                <paper-item>
-                    <text>Contact</text>
-                </paper-item>
-            </paper-listbox>
-        </div>
-    </paper-header-panel>
-    <!-- main content -->
-    <paper-header-panel main class="flex">
-        <paper-toolbar>
-            <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
-            <span>Order</span>
-        </paper-toolbar>
-        <!-- custom polymer element -->
-        <order-form image="hamburger">
+<body> <!-- Polymer uses flexbox for layout, add fullbleed, vertical, layout classes to body so content renders correctly -->
+    <paper-drawer-panel> <!-- add class flex so that panel takes up all available space -->
+        <!-- drawer -->
+        <paper-header-panel drawer class="layout vertical">
 
-        </order-form>
-    </paper-header-panel>
-</paper-drawer-panel>
+            <!-- create a div and add some <paper-item>'s to create a drawer with some elements -->
+
+        </paper-header-panel>
+        <!-- main content -->
+        <paper-header-panel main class="flex">
+            <!-- add <paper-toolbar> and give it a <paper-icon-button> with attribute paper-drawer-toggle>
+            set icon image with "icon" attribute
+            add a span with a title for your toolbar -->
+
+            <!-- add your custom polymer element here -->
+        </paper-header-panel>
+    </paper-drawer-panel>
 </body>
 </html>
